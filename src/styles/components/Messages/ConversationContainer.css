@@ -1,0 +1,100 @@
+.conversation-container {
+  height: 80px;
+  width: 100%;
+  border-bottom: solid rgb(235, 238, 240) 1px;
+  display: flex;
+  align-items: center;
+}
+
+.conversation-container:hover {
+  background-color: rgba(228, 228, 228, 0.205);
+  cursor: pointer;
+}
+
+.profil-picture-post-conversation {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  background-color: white;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.name-preview-conversation-container {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pseudo-name-conversation-container {
+  display: flex;
+  margin-left: 10px;
+}
+
+.preview-message {
+  overflow-x: hidden;
+  overflow: hidden;
+  margin-left: 10px;
+  width: 250px;
+  height: 20px;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+}
+
+.date-last-message {
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+}
+@media screen and (max-width:1050px) {
+  .preview-message {
+    display: none;
+  }
+  .date-last-message {
+    display: none;
+  }
+  .conversation-container {
+    height: 90px;
+    width: 100px;
+    border: solid rgb(235, 238, 240) 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2px;
+  }
+  .name-preview-conversation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profil-picture-post-conversation {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .pseudo-name-conversation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tweetName {
+
+  }
+  .info-post {
+    
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .left-messages-container {
+    width: 420px;
+  }
+}

@@ -1,0 +1,144 @@
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 99vh;
+  transform: translateX(-185%);
+  /* left: 20%; */
+}
+
+/* .top-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+} */
+
+.svg-logo-twitter {
+  height: 50px;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.tab-navbar-container {
+  display: flex;
+  margin: 10px 0;
+  padding: 12px 30px 12px 10px;
+  width: min-content;
+}
+
+.svg-logo-twitter:hover,
+.tab-navbar-container:hover {
+  background-color: rgba(70, 142, 73, 0.1);
+  color: #468E49;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.add-friends {
+  display: none;
+}
+
+.svg-navbar {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.active-navbar {
+  color: #468E49;
+}
+
+.button-navbar {
+  width: 230px;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 17px;
+  background-color: rgba(70, 142, 73);
+  color: white;
+}
+
+.button-navbar:hover {
+  background: rgba(70, 142, 73, 0.856);
+}
+
+.profil-navbar-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.profil-navbar-container:hover {
+  background-color: rgba(70, 142, 73, 0.1);
+  border-radius: 40px;
+}
+
+.left-profil-navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-picture-navbar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.svg-logout-navbar {
+  cursor: pointer;
+  width: 25px;
+}
+
+.svg-logout-navbar:hover {
+  color: #468E49;
+}
+
+/* @media screen and (max-width: 1400px) {
+  .navbar-container  {
+transform: translateX(-190%);
+  }
+} */
+
+@media screen and (max-width: 1270px) {
+  .h3-in-navbar {
+    display: none;
+  }
+  .button-navbar {
+    width: 50px;
+    font-size: 10px;
+  }
+  .left-profil-navbar-container {
+    display: none;
+  }
+  .navbar-container {
+    transform: translateX(-600%);
+  }
+  .tab-navbar-container {
+    padding: 12px 0px 12px 10px;
+    width: min-content;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .add-friends {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .navbar-container {
+    transform: translateX(-510%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navbar-container {
+    transform: translateX(-430%);
+  }
+}

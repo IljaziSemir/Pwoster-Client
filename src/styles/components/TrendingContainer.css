@@ -1,0 +1,31 @@
+.navbar-right {
+  position: fixed;
+  height: 98vh;
+  transform: translateX(140%);
+  top: 0;
+  /* left: 66%; */
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-container {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(247, 249, 250);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-right {
+    transform: translateX(160%);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-right {
+    display: none;
+  }
+}
